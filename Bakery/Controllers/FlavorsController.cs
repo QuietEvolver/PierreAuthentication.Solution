@@ -105,20 +105,21 @@ namespace Bakery.Controllers
     }
 
     [HttpPost]
-    public async Task<ActionResult> Edit(Flavor flavor)
+    // public async Task<ActionResult> Edit(Flavor flavor)
+    public ActionResult Edit(Flavor flavor)
     {
-      string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-      ApplicationUser currentUser = await _userManager.FindByIdAsync(userId);
-      if(currentUser.Id == flavor.User.Id)
-      {
+      // string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      // ApplicationUser currentUser = await _userManager.FindByIdAsync(userId);
+      // if(currentUser.Id == flavor.User.Id)
+      // {
         _db.Flavors.Update(flavor);
         _db.SaveChanges();
         return RedirectToAction("Index");
-      }
-      else
-      {
-        return RedirectToAction("Index");
-      }
+      // }
+      // else
+      // {
+      //   return RedirectToAction("Index");
+      // }
 
 
     }
