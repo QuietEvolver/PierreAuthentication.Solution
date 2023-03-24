@@ -105,6 +105,7 @@ namespace Bakery.Controllers
     }
 
     [HttpPost]
+    // ISOLATE FOR async AUTH
     // public async Task<ActionResult> Edit(Flavor flavor)
     public ActionResult Edit(Flavor flavor)
     {
