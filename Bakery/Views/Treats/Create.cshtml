@@ -8,9 +8,9 @@
 
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Title)
-  @Html.TextBoxFor(model => model.Title)
+    @Html.LabelFor(model => model.Title)
+    @Html.TextBoxFor(model => model.Title)
 
-  <input type="submit" value="Add new treat" class="btn btn-default" />
+    <input type="submit" value="Add new treat" class="btn btn-success" />
 }
-<p>@Html.ActionLink("Show all tags", "Index")</p>
+<p>@Html.ActionLink("Show all treats", "Index")</p>
