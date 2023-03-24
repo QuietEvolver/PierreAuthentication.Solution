@@ -12,12 +12,12 @@ using System.Security.Claims;
 namespace Bakery.Controllers
 {
   [Authorize]
-  public class BakerysController : Controller
+  public class FlavorsController : Controller
   {
     private readonly BakeryContext _db;
     private readonly UserManager<ApplicationUser> _userManager;
 
-    public BakerysController(UserManager<ApplicationUser> userManager, BakeryContext db)
+    public FlavorsController(UserManager<ApplicationUser> userManager, BakeryContext db)
     {
       _userManager = userManager;
       _db = db;

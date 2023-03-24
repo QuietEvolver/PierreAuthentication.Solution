@@ -25,16 +25,12 @@ namespace Bakery.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-
+      Flavor[] flavors = _db.Flavors.ToArray();
+      Treat[] treats = _db.Treats.ToArray(); 
       Dictionary<string, object[]> model = new Dictionary<string, object[]>();
 
-        List<Flavor> flavors = _db.Flavors.ToList();
-
-        List<Treat> treats = _db.Treats.ToList();
-
-        model.Add("recipes", flavors.ToArray());
-        model.Add("treats", treats.ToArray());
-
+      model.Add("flavors", flavors);
+      model.Add("treats", treats);
 
       return View(model);
     }
