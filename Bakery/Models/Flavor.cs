@@ -9,5 +9,7 @@ namespace Bakery.Models
     public int FlavorId { get; set; }
     [Required(ErrorMessage = "The Recipe's name can't be empty!")]
     public string FlavorName { get; set; }
+    public List<FlavorTreat> JoinEntities { get; }
+    public ApplicationUser User { get; set; }
   }
 }

@@ -1,4 +1,4 @@
-using Bakery.Models
+namespace Bakery.Models
 {
   public class FlavorTreat
   {
