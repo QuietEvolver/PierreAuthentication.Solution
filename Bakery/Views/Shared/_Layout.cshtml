@@ -46,9 +46,12 @@
     </nav>
     <!-- navigation bar ends -->
     
+    @* @await Html.PartialAsync("Header")
+    <hr> *@
     <div id="main-body">
     <hr />
     <li><img src='~/img/fresh-tasty.webp'/></li>
+    @* <li><img src='~/img/pierre.png'/></li> *@
     @RenderBody()
     </div>
     @await Html.PartialAsync("Footer")
