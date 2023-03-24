@@ -1,6 +1,9 @@
 body {
   font-family: sans-serif;
   background-color: #c5dafa;
+  background-image: url(Factory/wwwroot/img/pierre.png”);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 div#main-body {
@@ -9,6 +12,28 @@ div#main-body {
   margin-right: 10%;
 }
 
-div#index-nav {
+div#index-nav nav.navbar{
   text-align: center;
 }
+
+div#header {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+  text-align: center;
+};
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+  text-align: center;
+};
