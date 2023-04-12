@@ -1,4 +1,4 @@
-#  Pierre's Sweet and Savory Treats
+# Sweet and Savory Treats
 
 #### By Vera Weikel 
 
